@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-abyss-950 text-slate-200 font-body antialiased;
+  background-image: radial-gradient(circle at 15% 0%, rgba(34,211,238,0.06), transparent 40%),
+    radial-gradient(circle at 85% 100%, rgba(45,212,191,0.05), transparent 45%);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #1d4460;
+  border-radius: 4px;
+}
+
+.leaflet-container {
+  background: #071620 !important;
+  border-radius: 0.75rem;
+}
+.leaflet-popup-content-wrapper {
+  background: #0a1c29 !important;
+  color: #e2e8f0 !important;
+  border: 1px solid #1d4460;
+  border-radius: 0.5rem;
+}
+.leaflet-popup-tip {
+  background: #0a1c29 !important;
+}
